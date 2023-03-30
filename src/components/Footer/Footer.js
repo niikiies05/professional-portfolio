@@ -13,7 +13,7 @@ const Footer = () => {
             <div className={styles.footerContainer}>
                 <div className={styles.footerLogo}>
                     <Link href="/" legacyBehavior passHref>
-                        <a><img src="/images/dark.svg" alt="Logo" className={styles.logo} /></a>
+                        <a><img src="/images/logo.svg" alt="Logo" className={styles.logo} /></a>
                     </Link>
                 </div>
                 <nav className={styles.footerNav}>

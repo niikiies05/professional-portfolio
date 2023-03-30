@@ -13,11 +13,11 @@ const Hero = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h1 className={styles.heroTitle}>
-                    Welcome to Startup Landing!
-                    Get free landing pages every week.
+                    Bienvenue sur mon portfolio!
+                    Une nouvelle expérience du Web.
                 </h1>
                 <p className={styles.heroDescription}>
-                    We’ve brought you a great collection of absolutely free landing pages built with React, Next JS & Gatsby JS. Every week, we’ll be adding top of the line Startup Landing demos to our collection.
+                    Je suis un développeur Fullstack avec une expertise dans la création de sites web, d'applications web et de logiciels. J'ai de solides compétences en langages de programmation front-end et back-end, ainsi qu'en résolution de problèmes et en gestion de projets. 
                 </p>
                 <motion.div
                     // className={styles.heroButton}

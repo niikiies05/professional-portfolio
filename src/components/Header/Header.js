@@ -10,7 +10,7 @@ const Header = () => {
         <header className={styles.header} id="header">
             <div className={styles.logoContainer}>
                 <Link href="/" legacyBehavior passHref>
-                    <a><img src="/images/dark.svg" alt="Logo" className={styles.logo} /></a>
+                    <a><img src="/images/logo.svg" alt="Logo" className={styles.logo} /></a>
                 </Link>
             </div>
             <nav className={styles.nav}>

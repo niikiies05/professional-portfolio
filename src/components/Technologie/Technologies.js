@@ -7,7 +7,7 @@ import { technologiesData } from '../constants/technologies';
 const Technologies = () => {
     return (
         <section className={styles.technologies} id="technologie">
-            <h2 className={styles.technologiesTitle}>Built With Most Advanced Tools</h2>
+            <h2 className={styles.technologiesTitle}>Construit avec les outils les plus avancés.</h2>
             <div className={styles.techGrid}>
                 {technologiesData.map((tech, index) => (
                     <motion.div

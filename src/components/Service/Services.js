@@ -8,8 +8,8 @@ const Services = () => {
 
     return (
         <section className={styles.services}>
-            <h2 className={styles.servicesTitle}>More On The Way...</h2>
-            <p className={styles.serviceHeaderDescription}>Every week, We will add super fast mobile optimized demos on different niches from our collection. You will fall in love with our rich tech choice.</p>
+            <h2 className={styles.servicesTitle}>Services Sur Mesure...</h2>
+            <p className={styles.serviceHeaderDescription}>Explorez mes services personnalisés, conçus pour transformer vos idées en réalités époustouflantes. Bénéficiez de mon expertise dans divers domaines, tels que la conception graphique, le développement web, la stratégie de marque et bien d'autres encore.</p>
             <div className={styles.servicesList}>
                 {servicesData.map((service, index) => (
                     <motion.div

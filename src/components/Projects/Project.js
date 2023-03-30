@@ -16,8 +16,8 @@ const Projects = () => {
     };
     return (
         <section className={styles.projects} id="projets">
-            <h2 className={styles.projectsTitle}>Pick Whatever You Want!</h2>
-            <p className={styles.projectsDescription}>Startup Landing Templates already have all the necessary sections, just add your touch to make it your own, and voila - you’re ready to announce your presence to the world!</p>
+            <h2 className={styles.projectsTitle}>Découvrez Mes Projets Innovants et Captivants!</h2>
+            <p className={styles.projectsDescription}>Mon portfolio est un écrin de projets variés et inspirants, reflétant mon expertise en matière de conception, de développement et de stratégie. Découvrez des solutions sur mesure, façonnées pour répondre aux besoins uniques de chaque client!</p>
             <div className={styles.projectsGrid}>
                 {projectsData.map((project, index) => (
                     <motion.div
