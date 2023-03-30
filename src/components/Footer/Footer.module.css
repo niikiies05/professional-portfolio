@@ -1,0 +1,134 @@
+.footer {
+    background-color: #0f0f0f;
+    padding: 40px 0;
+}
+
+.footerContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    flex: 1 1 100%;
+    max-width: 120px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 100%;
+}
+
+.footerNav {
+    flex: 1 1 100%;
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.footerNavList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerNavItem {
+    margin-bottom: 10px;
+}
+
+.footerNavLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.footerNavLink:hover {
+    color: #a9a9a9;
+}
+
+.footerContact {
+    flex: 1 1 100%;
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.footerContactItem {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footerContactIcon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footerIcon{
+
+}
+
+.footerContactLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.footerContactLink:hover {
+    color: #a9a9a9;
+}
+
+.footerSocial {
+    flex: 1 1 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footerIconLink {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.footerIconLink:hover {
+    color: #a9a9a9;
+}
+
+.footerCopy {
+    flex: 1 1 100%;
+    text-align: center;
+    color: #a9a9a9;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+
+.footerCopyLogo {
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .footerLogo {
+        margin-bottom: 0;
+    }
+
+    .footerNav {
+        max-width: 250px;
+    }
+
+    .footerContact {
+        max-width: 250px;
+    }
+
+    .footerSocial {
+        max-width: 150px;
+    }
+}

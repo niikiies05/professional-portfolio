@@ -1,0 +1,134 @@
+.contact {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #3e3e3e;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contactFormWrapper {
+    margin-right: 40px;
+    width: 50%;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3e3e3e;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 500px;
+}
+
+.formGroup textarea {
+    height: 200px;
+}
+
+.submitButton {
+    background-color: #42b4e6;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #3badd8;
+}
+
+.contactDetailsWrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDetails {
+    text-align: left;
+}
+
+.contactDetailsTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3e3e3e;
+}
+
+.contactDetailsList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contactDetailsItem {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #3e3e3e;
+}
+
+.contactDetailsItem i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #42b4e6;
+}
+
+.contactDetailsItem a {
+    color: #3e3e3e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contactDetailsItem a:hover {
+    color: #42b4e6;
+}
+
+@media screen and (max-width: 768px) {
+    .contactContent {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contactFormWrapper,
+    .contactDetailsWrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+}
