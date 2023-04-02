@@ -59,7 +59,7 @@
     box-shadow: 0 12px 24px -10px rgba(0,0,0,.78);
 }
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 768px) {
     .hero {
         /*display: none;*/
         background-image: none;
@@ -81,5 +81,25 @@
 
     .heroContent {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero {
+        margin-top: -300px;
+        margin-bottom: -350px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hero {
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .hero {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }

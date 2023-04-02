@@ -21,8 +21,8 @@ export const technologiesData = [
         name: 'HTML5',
         icon: faHtml5,
     },
-    {
-        name: 'CSS3',
-        icon: faCss3Alt
-    }
+    // {
+    //     name: 'CSS3',
+    //     icon: faCss3Alt
+    // }
 ]

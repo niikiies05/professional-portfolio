@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Blog.module.css';
 import { motion } from 'framer-motion';
-import { blogData } from '../../constants/blogs';
+import { blogData } from '@/constants/blogs';
 import BlogModal from './DetailsBlog';
 
 const Blog = () => {

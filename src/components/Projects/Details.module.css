@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
@@ -77,24 +77,12 @@
 }
 
 /* Responsive */
-/*@media (max-width: 768px) {*/
-/*    .modalContent {*/
-/*        width: 90%;*/
-/*    }*/
+@media (min-width: 1024px) {
+   .closeButton{
+       padding-top: 100px;
+   }
 
-/*    .modalBody {*/
-/*        flex-direction: column;*/
-/*    }*/
-
-/*    .modalImages {*/
-/*        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
-/*    }*/
-
-/*    .modalDescription {*/
-/*        margin-top: 0;*/
-/*    }*/
-
-/*    .modalFooter {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*}*/
+    /*.modalHeader {*/
+    /*    padding-top: 50px;*/
+    /*}*/
+}

@@ -102,6 +102,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .header {
+        padding: 0.5rem 2rem;
+    }
+
     .navList {
         display: none;
         position: absolute;
