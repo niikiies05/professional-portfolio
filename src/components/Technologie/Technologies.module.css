@@ -74,20 +74,16 @@
 @media only screen and (max-width: 490px) {
     .techGrid {
         justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .techItem {
-        width: calc(50% - 24px);
+        width: 200px;
+        margin: 0 8px;
+        flex-shrink: 0;
     }
 }
 
-@media only screen and (min-width: 491px) {
-    .techGrid {
-        justify-content: space-between;
-    }
-
-    .techItem {
-        width: calc(25% - 24px);
-    }
-}
 
