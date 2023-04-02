@@ -130,3 +130,68 @@
     text-decoration: none;
 }
 
+/* Responsive styles for Project Component */
+
+@media only screen and (max-width: 1024px) {
+    .projectsDescription {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projects {
+        margin: 0 50px;
+    }
+
+    .projectsGrid {
+        margin-top: 60px;
+    }
+
+    .projectCard {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .projects {
+        margin: 0 30px;
+    }
+
+    .projectsTitle {
+        font-size: 1.5rem;
+    }
+
+    .projectsDescription {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .projectCard {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-bottom: 20px;
+    }
+
+    .projectTitle {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .projectDescription {
+        font-size: 14px;
+    }
+
+    .projectLinks {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .projectLinkRight, .projectLinkLeft {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+

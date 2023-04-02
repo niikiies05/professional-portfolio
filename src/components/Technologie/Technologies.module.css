@@ -5,19 +5,22 @@
 }
 
 .technologiesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #f100ae;
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 .techGrid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 50px;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .techItem {
@@ -27,7 +30,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,.05);
     margin-left: 12px;
     margin-right: 12px;
-    width: calc(25% - 24px);
+    /*width: calc(25% - 24px);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +50,12 @@
     transition: color 0.3s;
 }
 
+.techImage{
+    height: 100px;
+    /*max-width: 100%;*/
+    /*display: block;*/
+}
+
 .techItem:hover .techIcon {
     color: #0059b2;
 }
@@ -62,3 +71,23 @@
 .techItem:hover .techName {
     color: #0070f3;
 }
+@media only screen and (max-width: 490px) {
+    .techGrid {
+        justify-content: center;
+    }
+
+    .techItem {
+        width: calc(50% - 24px);
+    }
+}
+
+@media only screen and (min-width: 491px) {
+    .techGrid {
+        justify-content: space-between;
+    }
+
+    .techItem {
+        width: calc(25% - 24px);
+    }
+}
+

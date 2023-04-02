@@ -58,3 +58,28 @@
     background-color: #0059b2;
     box-shadow: 0 12px 24px -10px rgba(0,0,0,.78);
 }
+
+@media screen and (max-width: 988px) {
+    .hero {
+        /*display: none;*/
+        background-image: none;
+        margin-top: -150px;
+        margin-bottom: -250px;
+    }
+
+    .heroTitle {
+        font-size: 24px;
+    }
+
+    .heroDescription {
+        font-size: 16px;
+    }
+
+    .heroContent {
+        max-width: 90%;
+    }
+
+    .heroContent {
+        text-align: center;
+    }
+}

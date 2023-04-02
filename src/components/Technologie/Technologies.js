@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Technologies.module.css';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { technologiesData } from '../constants/technologies';
+import { technologiesData } from '@/constants/technologies';
 
 const Technologies = () => {
     return (
@@ -19,6 +19,7 @@ const Technologies = () => {
                     >
                         <FontAwesomeIcon icon={tech.icon} className={styles.techIcon} />
                         <h3 className={styles.techName}>{tech.name}</h3>
+
                     </motion.div>
                 ))}
             </div>

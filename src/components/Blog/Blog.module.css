@@ -20,7 +20,7 @@
     cursor: pointer;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
     overflow: hidden;
 }
@@ -100,3 +100,85 @@
 .viewAllButton:hover {
     background-color: #0059b2;
 }
+
+/* Style pour les écrans de petite taille */
+@media (max-width: 640px) {
+    .blog {
+        margin: 0 20px;
+        padding: 2rem 0;
+    }
+
+    .blogTitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .blogGrid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 1.5rem;
+    }
+
+    .blogImage {
+        height: 160px;
+    }
+
+    .viewAllButton {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Style pour les écrans de taille moyenne */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .blog {
+        margin: 0 40px;
+        padding: 3rem 0;
+    }
+
+    .blogTitle {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .blogGrid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .blogImage {
+        height: 200px;
+    }
+
+    .viewAllButton {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Style pour les écrans de grande taille */
+@media (min-width: 1025px) {
+    .blog {
+        margin: 0 100px;
+        padding: 4rem 0;
+    }
+
+    .blogTitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .blogGrid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .blogImage {
+        height: 220px;
+    }
+
+    .viewAllButton {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+

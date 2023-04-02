@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from './Header.module.css';
-import {linkData} from "@/components/constants/blogs";
+import {linkData} from "@/constants/blogs";
 
 const Header = () => {
+    const [navOpen, setNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setNavOpen(!navOpen);
+    };
+
     return (
         <header className={styles.header} id="header">
             <div className={styles.logoContainer}>
@@ -14,12 +20,14 @@ const Header = () => {
                 </Link>
             </div>
             <nav className={styles.nav}>
-                <ul className={styles.navList}>
+                <ul className={`${styles.navList} ${navOpen ? 'active' : ''}`}>
                     <li className={styles.navItem}>
                         <Link href="/" className={styles.navLink}></Link>
                     </li>
                     <li className={styles.navItem}>
-                        <Link href="#technologie" className={styles.navLink}>Technologie</Link>
+                        <Link href="#technologie" className={styles.navLink}>
+                            Technologie
+                        </Link>
                     </li>
                     <li className={styles.navItem}>
                         <Link href="#projets" className={styles.navLink}>Projets</Link>
@@ -39,6 +47,11 @@ const Header = () => {
                 <a href={linkData.linkedin} target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                     <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
                 </a>
+                <div className={styles.menuIcon} onClick={toggleNav}>
+                    <div className={styles.menuBar}></div>
+                    <div className={styles.menuBar}></div>
+                    <div className={styles.menuBar}></div>
+                </div>
             </div>
         </header>
     );

@@ -4,6 +4,13 @@
     margin: 10px 100px;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .servicesTitle {
     text-align: center;
     /*color: #f100ae;*/
@@ -96,15 +103,28 @@
 }
 
 @media screen and (max-width: 768px) {
-    .servicesGrid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .services {
+        margin: 10px 20px;
+        padding: 2rem 0;
+    }
+
+    .serviceHeaderDescription {
+        margin: 0 20px;
+    }
+
+    .servicesList {
+        flex-wrap: wrap;
+        margin-top: 2rem;
     }
 
     .serviceItem {
-        max-width: 320px;
-        width: 100%;
-        margin-bottom: 2rem;
+        width: calc(50% - 20px);
+        margin: 0 10px 20px;
+    }
+
+    .serviceDescription {
+        opacity: 1;
     }
 }
+
+

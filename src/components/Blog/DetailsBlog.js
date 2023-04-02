@@ -7,6 +7,7 @@ const BlogModal = ({ blog, handleClose }) => {
     return (
         <div className={styles.blogModalWrapper}>
             <div className={styles.blogModalBackdrop} onClick={handleClose} />
+
             <motion.div
                 className={styles.blogModalContent}
                 initial={{ opacity: 0, y: 50 }}
@@ -16,7 +17,7 @@ const BlogModal = ({ blog, handleClose }) => {
                 <div className={styles.blogModalHeader}>
                     <h3 className={styles.blogModalTitle}>{blog.title}</h3>
                     <button className={styles.blogModalCloseButton} onClick={handleClose}>
-                        <i className="fas fa-times" />
+                        &times;
                     </button>
                 </div>
                     <div  className={styles.blogModalBody}>

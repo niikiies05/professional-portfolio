@@ -2,14 +2,16 @@ import React from 'react';
 import styles from './Services.module.css';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {servicesData} from "@/components/constants/services";
+import {servicesData} from "@/constants/services";
 
 const Services = () => {
 
     return (
         <section className={styles.services}>
-            <h2 className={styles.servicesTitle}>Services Sur Mesure...</h2>
-            <p className={styles.serviceHeaderDescription}>Explorez mes services personnalisés, conçus pour transformer vos idées en réalités époustouflantes. Bénéficiez de mon expertise dans divers domaines, tels que la conception graphique, le développement web, la stratégie de marque et bien d'autres encore.</p>
+            <div className={styles.header}>
+                <h2 className={styles.servicesTitle}>Services Sur Mesure...</h2>
+                <p className={styles.serviceHeaderDescription}>Explorez mes services personnalisés, conçus pour transformer vos idées en réalités époustouflantes. Bénéficiez de mon expertise dans divers domaines, tels que la conception graphique, le développement web, la stratégie de marque et bien d'autres encore.</p>
+            </div>
             <div className={styles.servicesList}>
                 {servicesData.map((service, index) => (
                     <motion.div

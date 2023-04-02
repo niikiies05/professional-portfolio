@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Project.module.css';
 import { motion } from 'framer-motion';
-import {projectsData} from '../constants/projects';
+import {projectsData} from '../../constants/projects';
 import DetailsProject from './DetailsProject';
 
 const Projects = () => {

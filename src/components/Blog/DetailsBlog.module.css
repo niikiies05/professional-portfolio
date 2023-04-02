@@ -85,13 +85,39 @@
 
 @media only screen and (max-width: 768px) {
     .blogModalContent {
+        width: 100%;
+        height: 100%;
+        max-height: unset;
+        overflow-y: unset;
+    }
+    .blogModalHeader {
         flex-direction: column;
+        align-items: flex-start;
+    }
+    .blogModalTitle {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .blogModalCloseButton {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .blogModalBody {
+        align-items: flex-start;
+        margin-top: 1rem;
     }
     .blogModalImage {
-        width: 100%;
-        margin-bottom: 1.5rem;
+        max-height: unset;
+        margin-bottom: 1rem;
     }
     .blogModalDescription {
         width: 100%;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    .blogModalDescription:last-of-type {
+        margin-bottom: 0;
     }
 }
+

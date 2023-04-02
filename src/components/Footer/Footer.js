@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub, faInstagram, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.css';
-import {linkData} from "@/components/constants/blogs";
+import {linkData} from "@/constants/blogs";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -71,4 +71,93 @@
 .icon {
     font-size: 1.2rem;
 }
+
+.menuIcon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menuBar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: transform 0.2s ease-out;
+}
+
+.active .menuBar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.active .menuBar:nth-child(2) {
+    opacity: 0;
+}
+
+.active .menuBar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media only screen and (max-width: 768px) {
+    .navList {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    .navItem {
+        margin: 1rem 0;
+    }
+
+    .navLink {
+        display: block;
+        padding: 0.5rem 0;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .navLink:hover {
+        color: #0070f3;
+    }
+
+    .iconLink {
+        margin: 1rem;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .navButton {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 25px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .navButton:focus ~ .navList {
+        display: block;
+    }
+
+    .navButton:focus {
+        outline: none;
+    }
+}
+
+
 
