@@ -1,4 +1,4 @@
-import { faReact, faNodeJs, faPython, faJs, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faNodeJs, faPython, faJs, faAngular, faFigma, faSymfony, faLaravel } from '@fortawesome/free-brands-svg-icons';
 
 export const technologiesData = [
     {
@@ -10,19 +10,27 @@ export const technologiesData = [
         icon: faNodeJs,
     },
     {
+        name: 'Angular',
+        icon: faAngular,
+    },
+    {
+        name: 'Next',
+        icon: faJs,
+    },
+    {
         name: 'Python',
         icon: faPython,
     },
     {
-        name: 'JavaScript',
-        icon: faJs,
+        name: 'Symfony',
+        icon: faSymfony,
     },
     {
-        name: 'HTML5',
-        icon: faHtml5,
+        name: 'Laravel',
+        icon: faLaravel,
     },
-    // {
-    //     name: 'CSS3',
-    //     icon: faCss3Alt
-    // }
+    {
+        name: 'Figma',
+        icon: faFigma,
+    },
 ]

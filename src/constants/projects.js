@@ -35,8 +35,8 @@ export const projectsData = [
         miniature: '/images/4.png',
         images: ['/images/4.png',],
         tags: ['HTML', 'Blade', 'Laravel', 'PHP'],
-        visit: '',
-        source: '',
+        visit: 'https://github.com/niikiies05/FindJob',
+        source: 'https://github.com/niikiies05/FindJob',
         id: 3,
     },
     // {
