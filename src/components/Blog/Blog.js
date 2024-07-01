@@ -3,6 +3,8 @@ import styles from './Blog.module.css';
 import { motion } from 'framer-motion';
 import { blogData } from '@/constants/blogs';
 import BlogModal from './DetailsBlog';
+import DetailsProject from "@/components/Projects/DetailsProject";
+import ModalContainer from "@/components/Common/ModalContainer";
 
 const Blog = () => {
     const [selectedBlog, setSelectedBlog] = React.useState(null);
@@ -39,7 +41,17 @@ const Blog = () => {
                 ))}
             </div>
             {selectedBlog && (
-                <BlogModal blog={selectedBlog} handleClose={handleClose} />
+                <ModalContainer
+                    closeModal={handleClose}
+                    show={selectedBlog}
+                    title={""}
+                    footer={[]}
+                    modalStyles={{ top: 10 }}
+                    width={1400}
+                >
+                    <BlogModal blog={selectedBlog} handleClose={handleClose} />
+                </ModalContainer>
+
             )}
             <div className={styles.viewAllButtonWrapper}>
                 <button className={styles.viewAllButton}>Voir tous les articles</button>

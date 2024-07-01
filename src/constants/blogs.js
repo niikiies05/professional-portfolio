@@ -65,6 +65,6 @@ export const blogData = [
 export const linkData = {
     github : "https://github.com/niikiies05",
     linkedin: "https://www.linkedin.com/in/maximilien-kassi-6621431b4/",
-    instagram: "https://www.instagram.com/im_delvis/",
-    twitter: "https://twitter.com/DelvisKassi"
+    // instagram: "https://www.instagram.com/im_delvis/",
+    // twitter: "https://twitter.com/DelvisKassi"
 }

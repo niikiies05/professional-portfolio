@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Project.module.css';
 import { motion } from 'framer-motion';
-import {projectsData} from '../../constants/projects';
+import {projectsData} from '@/constants/projects';
 import DetailsProject from './DetailsProject';
+import ModalContainer from "@/components/Common/ModalContainer";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = React.useState(null);
@@ -40,19 +41,30 @@ const Projects = () => {
                                 ))}
                             </div>
                             <div className={styles.projectLinks}>
-                                <a href={project.source} target="_blank" rel="noreferrer" className={styles.projectLinkRight}>
+                                {project.source && <a href={project.source} target="_blank" rel="noreferrer"
+                                    className={styles.projectLinkRight}>
                                     Code source
-                                </a>
-                                <a href={project.visit} target="_blank" rel="noreferrer" className={styles.projectLinkLeft}>
+                                </a>}
+                                {project.visit && <a href={project.visit} target="_blank" rel="noreferrer"
+                                    className={styles.projectLinkLeft}>
                                     Visiter le site
-                                </a>
+                                </a>}
                             </div>
                         </div>
                     </motion.div>
                 ))}
             </div>
             {selectedProject && (
-                <DetailsProject project={selectedProject} handleClose={handleClose} />
+                <ModalContainer
+                    closeModal={handleClose}
+                    show={selectedProject}
+                    title={""}
+                    footer={[]}
+                    modalStyles={{ top: 10 }}
+                    width={"100%"}
+                >
+                    <DetailsProject project={selectedProject} handleClose={handleClose} />
+                </ModalContainer>
             )}
         </section>
     );

@@ -49,12 +49,14 @@ const Footer = () => {
                     <a href={linkData.linkedin} target="_blank" rel="noopener noreferrer" className={styles.footerIconLink}>
                         <FontAwesomeIcon icon={faLinkedin} className={styles.footerIcon} />
                     </a>
-                    <a href={linkData.instagram} target="_blank" rel="noopener noreferrer" className={styles.footerIconLink}>
-                        <FontAwesomeIcon icon={faInstagram} className={styles.footerIcon} />
-                    </a>
-                    <a href={linkData.twitter} target="_blank" rel="noopener noreferrer" className={styles.footerIconLink}>
-                        <FontAwesomeIcon icon={faTwitter} className={styles.footerIcon} />
-                    </a>
+                    {linkData.instagram && <a href={linkData.instagram} target="_blank" rel="noopener noreferrer"
+                        className={styles.footerIconLink}>
+                        <FontAwesomeIcon icon={faInstagram} className={styles.footerIcon}/>
+                    </a>}
+                    {linkData.twitter && <a href={linkData.twitter} target="_blank" rel="noopener noreferrer"
+                        className={styles.footerIconLink}>
+                        <FontAwesomeIcon icon={faTwitter} className={styles.footerIcon}/>
+                    </a>}
                 </div>
             </div>
             <div className={styles.footerCopy}>
